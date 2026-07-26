@@ -49,8 +49,14 @@
 
 @layer base {
   body {
-    @apply bg-cover bg-center bg-no-repeat;
-    background-attachment: scroll;
+    min-height: 100vh;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
 
     background-image:
       radial-gradient(
@@ -58,13 +64,14 @@
         rgba(251,248,242,.92) 0%,
         rgba(251,248,242,.75) 25%,
         rgba(251,248,242,.45) 45%,
-        rgba(251,248,242,.15) 70%,
+        rgba(251,248,242,.12) 70%,
         transparent 100%
       ),
       url("/images/bg.avif");
 
-    background-position: center;
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   h1 {
