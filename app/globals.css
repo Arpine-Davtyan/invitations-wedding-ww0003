@@ -49,17 +49,22 @@
 
 @layer base {
   body {
-    @apply bg-cover bg-center bg-no-repeat bg-fixed;
+    @apply bg-cover bg-center bg-no-repeat;
+    background-attachment: scroll;
+
     background-image:
       radial-gradient(
         ellipse at center,
         rgba(251,248,242,.92) 0%,
-        rgba(251,248,242,.75) 22%,
-        rgba(251,248,242,.45) 40%,
-        rgba(251,248,242,.12) 100%,
-        transparent 78%
+        rgba(251,248,242,.75) 25%,
+        rgba(251,248,242,.45) 45%,
+        rgba(251,248,242,.15) 70%,
+        transparent 100%
       ),
       url("/images/bg.avif");
+
+    background-position: center;
+    background-size: cover;
   }
 
   h1 {
