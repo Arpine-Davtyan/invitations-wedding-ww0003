@@ -47,7 +47,7 @@ const Hero = () => {
                 animate="visible"
                 transition={{ delay: 1.6 }}
                 onClick={scrollDown}
-                className="absolute bottom-8 cursor-pointer outline-0 animate-bounce"
+                className="absolute bottom-15 cursor-pointer outline-0 animate-bounce"
                 aria-label="Scroll down"
             >
                 <CaretDownIcon
